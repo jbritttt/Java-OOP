@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Test-Suite for all Classes" >
+<test name="Different Coat" >
+<classes>
+<class name="com.nwrc.CustomerTest.CustomerTests" />
+<class name="com.nwrc.GeneralTest.GeneralTests" />
+<class name="com.nwrc.HelperTest.HelperTests" />
+<class name="com.nwrc.testdataaccess.ConstantsTest" />
+<class name="com.nwrc.TradeTest.TradeTests" />
+</classes>
+</test>
+</suite>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Test-Suite for all Classes]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Different Coat(failed)">
+    <classes>
+      <class name="com.nwrc.TradeTest.TradeTests">
+        <methods>
+          <include name="getCustomerType8p1"/>
+          <include name="setupNegativeTest"/>
+          <include name="getSurfaceArea11p2"/>
+          <include name="getSurfaceArea11p1"/>
+          <include name="getTradeName12p1"/>
+          <include name="getCustomerAddress9p1"/>
+          <include name="getCustomerType8p2"/>
+          <include name="getCustomerAddress9p2"/>
+          <include name="getCustomerTelNo10p1"/>
+          <include name="getTradeName12p2"/>
+          <include name="getCustomerTelNo10p2"/>
+          <include name="setupPositiveTest"/>
+        </methods>
+      </class> <!-- com.nwrc.TradeTest.TradeTests -->
+      <class name="com.nwrc.CustomerTest.CustomerTests">
+        <methods>
+          <include name="getCoverage27p1"/>
+          <include name="getCoverage20p1"/>
+          <include name="getCoverage21p1"/>
+          <include name="getCoverage22p1"/>
+          <include name="disposeObject"/>
+          <include name="getCoverage24p1"/>
+          <include name="getCoverage25p1"/>
+          <include name="getCoverage26p1"/>
+          <include name="setupGeneralTests"/>
+          <include name="getCoverage18p1"/>
+          <include name="getCoverage23p1"/>
+          <include name="getCoverage19p1"/>
+          <include name="setupTradeTests"/>
+        </methods>
+      </class> <!-- com.nwrc.CustomerTest.CustomerTests -->
+      <class name="com.nwrc.GeneralTest.GeneralTests">
+        <methods>
+          <include name="getWidth6p1"/>
+          <include name="setupNegativeTest"/>
+          <include name="getCustomerAddress2p1"/>
+          <include name="getCustomerTelNo3p2"/>
+          <include name="getHeight5p1"/>
+          <include name="getHeight5p2"/>
+          <include name="getWidth6p2"/>
+          <include name="getCustomerTelNo3p1"/>
+          <include name="getCustomerType1p2"/>
+          <include name="getCustomerType1p1"/>
+          <include name="getRoomShape4p1"/>
+          <include name="getRoomShape4p2"/>
+          <include name="getCustomerName7p1"/>
+          <include name="getCustomerName7p2"/>
+          <include name="getCustomerAddress2p2"/>
+          <include name="setupPositiveTest"/>
+        </methods>
+      </class> <!-- com.nwrc.GeneralTest.GeneralTests -->
+      <class name="com.nwrc.testdataaccess.ConstantsTest">
+        <methods>
+          <include name="testWindowSize14p1"/>
+          <include name="testGallons16p1"/>
+          <include name="testCoverage13p1"/>
+          <include name="testDoorSize15p1"/>
+        </methods>
+      </class> <!-- com.nwrc.testdataaccess.ConstantsTest -->
+      <class name="com.nwrc.HelperTest.HelperTests">
+        <methods>
+          <include name="getCustomerType1p1"/>
+          <include name="setupPositiveTest"/>
+        </methods>
+      </class> <!-- com.nwrc.HelperTest.HelperTests -->
+    </classes>
+  </test> <!-- Different Coat(failed) -->
+</suite> <!-- Failed suite [Test-Suite for all Classes] -->

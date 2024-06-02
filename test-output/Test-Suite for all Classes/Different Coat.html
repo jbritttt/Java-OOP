@@ -1,0 +1,1393 @@
+<html>
+<head>
+<title>TestNG:  Different Coat</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Different Coat</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/39</td>
+</tr><tr>
+<td>Started on:</td><td>Thu May 09 17:15:52 BST 2024</td>
+</tr>
+<tr><td>Total time:</td><td>0 seconds (457 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.nwrc.HelperTest.HelperTests.setupPositiveTest()'><b>setupPositiveTest</b><br>Test class: com.nwrc.HelperTest.HelperTests</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.List.size()&quot; because &quot;allMyRecords&quot; is null
+	at com.nwrc.HelperTest.HelperTests.setupPositiveTest(HelperTests.java:24)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace330739404", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace330739404'><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.List.size()&quot; because &quot;allMyRecords&quot; is null
+	at com.nwrc.HelperTest.HelperTests.setupPositiveTest(HelperTests.java:24)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:644)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>com.nwrc.HelperTest.HelperTests@692f203f</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.nwrc.TradeTest.TradeTests.setupPositiveTest()'><b>setupPositiveTest</b><br>Test class: com.nwrc.TradeTest.TradeTests</td>
+<td></td>
+<td>0</td>
+<td>com.nwrc.TradeTest.TradeTests@7b2bbc3</td></tr>
+<tr>
+<td title='com.nwrc.TradeTest.TradeTests.setupNegativeTest()'><b>setupNegativeTest</b><br>Test class: com.nwrc.TradeTest.TradeTests</td>
+<td></td>
+<td>0</td>
+<td>com.nwrc.TradeTest.TradeTests@7b2bbc3</td></tr>
+<tr>
+<td title='com.nwrc.CustomerTest.CustomerTests.disposeObject()'><b>disposeObject</b><br>Test class: com.nwrc.CustomerTest.CustomerTests</td>
+<td></td>
+<td>0</td>
+<td>com.nwrc.CustomerTest.CustomerTests@459e9125</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.nwrc.CustomerTest.CustomerTests.getCoverage18p1()'><b>getCoverage18p1</b><br>Test class: com.nwrc.CustomerTest.CustomerTests</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.List.size()&quot; because &quot;allMyRecords&quot; is null
+	at com.nwrc.HelperTest.HelperTests.setupPositiveTest(HelperTests.java:24)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace895281180", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace895281180'><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.List.size()&quot; because &quot;allMyRecords&quot; is null
+	at com.nwrc.HelperTest.HelperTests.setupPositiveTest(HelperTests.java:24)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:644)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>com.nwrc.CustomerTest.CustomerTests@459e9125</td></tr>
+<tr>
+<td title='com.nwrc.CustomerTest.CustomerTests.getCoverage19p1()'><b>getCoverage19p1</b><br>Test class: com.nwrc.CustomerTest.CustomerTests</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.List.size()&quot; because &quot;allMyRecords&quot; is null
+	at com.nwrc.HelperTest.HelperTests.setupPositiveTest(HelperTests.java:24)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace857068247", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace857068247'><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.List.size()&quot; because &quot;allMyRecords&quot; is null
+	at com.nwrc.HelperTest.HelperTests.setupPositiveTest(HelperTests.java:24)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:644)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>com.nwrc.CustomerTest.CustomerTests@459e9125</td></tr>
+<tr>
+<td title='com.nwrc.testdataaccess.ConstantsTest.testWindowSize14p1()'><b>testWindowSize14p1</b><br>Test class: com.nwrc.testdataaccess.ConstantsTest</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.List.size()&quot; because &quot;allMyRecords&quot; is null
+	at com.nwrc.HelperTest.HelperTests.setupPositiveTest(HelperTests.java:24)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1047460013", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1047460013'><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.List.size()&quot; because &quot;allMyRecords&quot; is null
+	at com.nwrc.HelperTest.HelperTests.setupPositiveTest(HelperTests.java:24)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:644)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>com.nwrc.testdataaccess.ConstantsTest@48f2bd5b</td></tr>
+<tr>
+<td title='com.nwrc.GeneralTest.GeneralTests.getWidth6p2()'><b>getWidth6p2</b><br>Test class: com.nwrc.GeneralTest.GeneralTests</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.List.size()&quot; because &quot;allMyRecords&quot; is null
+	at com.nwrc.HelperTest.HelperTests.setupPositiveTest(HelperTests.java:24)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1804379080", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1804379080'><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.List.size()&quot; because &quot;allMyRecords&quot; is null
+	at com.nwrc.HelperTest.HelperTests.setupPositiveTest(HelperTests.java:24)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:644)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>com.nwrc.GeneralTest.GeneralTests@4c583ecf</td></tr>
+<tr>
+<td title='com.nwrc.CustomerTest.CustomerTests.getCoverage20p1()'><b>getCoverage20p1</b><br>Test class: com.nwrc.CustomerTest.CustomerTests</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.List.size()&quot; because &quot;allMyRecords&quot; is null
+	at com.nwrc.HelperTest.HelperTests.setupPositiveTest(HelperTests.java:24)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace225344427", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace225344427'><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.List.size()&quot; because &quot;allMyRecords&quot; is null
+	at com.nwrc.HelperTest.HelperTests.setupPositiveTest(HelperTests.java:24)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:644)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>com.nwrc.CustomerTest.CustomerTests@459e9125</td></tr>
+<tr>
+<td title='com.nwrc.GeneralTest.GeneralTests.getCustomerAddress2p1()'><b>getCustomerAddress2p1</b><br>Test class: com.nwrc.GeneralTest.GeneralTests</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.List.size()&quot; because &quot;allMyRecords&quot; is null
+	at com.nwrc.HelperTest.HelperTests.setupPositiveTest(HelperTests.java:24)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace27084827", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace27084827'><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.List.size()&quot; because &quot;allMyRecords&quot; is null
+	at com.nwrc.HelperTest.HelperTests.setupPositiveTest(HelperTests.java:24)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:644)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>com.nwrc.GeneralTest.GeneralTests@4c583ecf</td></tr>
+<tr>
+<td title='com.nwrc.GeneralTest.GeneralTests.getCustomerName7p2()'><b>getCustomerName7p2</b><br>Test class: com.nwrc.GeneralTest.GeneralTests</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.List.size()&quot; because &quot;allMyRecords&quot; is null
+	at com.nwrc.HelperTest.HelperTests.setupPositiveTest(HelperTests.java:24)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1301352406", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1301352406'><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.List.size()&quot; because &quot;allMyRecords&quot; is null
+	at com.nwrc.HelperTest.HelperTests.setupPositiveTest(HelperTests.java:24)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:644)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>com.nwrc.GeneralTest.GeneralTests@4c583ecf</td></tr>
+<tr>
+<td title='com.nwrc.GeneralTest.GeneralTests.getCustomerTelNo3p1()'><b>getCustomerTelNo3p1</b><br>Test class: com.nwrc.GeneralTest.GeneralTests</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.List.size()&quot; because &quot;allMyRecords&quot; is null
+	at com.nwrc.HelperTest.HelperTests.setupPositiveTest(HelperTests.java:24)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace640113647", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace640113647'><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.List.size()&quot; because &quot;allMyRecords&quot; is null
+	at com.nwrc.HelperTest.HelperTests.setupPositiveTest(HelperTests.java:24)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:644)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>com.nwrc.GeneralTest.GeneralTests@4c583ecf</td></tr>
+<tr>
+<td title='com.nwrc.testdataaccess.ConstantsTest.testDoorSize15p1()'><b>testDoorSize15p1</b><br>Test class: com.nwrc.testdataaccess.ConstantsTest</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.List.size()&quot; because &quot;allMyRecords&quot; is null
+	at com.nwrc.HelperTest.HelperTests.setupPositiveTest(HelperTests.java:24)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1710265848", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1710265848'><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.List.size()&quot; because &quot;allMyRecords&quot; is null
+	at com.nwrc.HelperTest.HelperTests.setupPositiveTest(HelperTests.java:24)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:644)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>com.nwrc.testdataaccess.ConstantsTest@48f2bd5b</td></tr>
+<tr>
+<td title='com.nwrc.TradeTest.TradeTests.getCustomerTelNo10p1()'><b>getCustomerTelNo10p1</b><br>Test class: com.nwrc.TradeTest.TradeTests</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.List.size()&quot; because &quot;allMyRecords&quot; is null
+	at com.nwrc.HelperTest.HelperTests.setupPositiveTest(HelperTests.java:24)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1025309396", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1025309396'><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.List.size()&quot; because &quot;allMyRecords&quot; is null
+	at com.nwrc.HelperTest.HelperTests.setupPositiveTest(HelperTests.java:24)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:644)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>com.nwrc.TradeTest.TradeTests@7b2bbc3</td></tr>
+<tr>
+<td title='com.nwrc.testdataaccess.ConstantsTest.testGallons16p1()'><b>testGallons16p1</b><br>Test class: com.nwrc.testdataaccess.ConstantsTest</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.List.size()&quot; because &quot;allMyRecords&quot; is null
+	at com.nwrc.HelperTest.HelperTests.setupPositiveTest(HelperTests.java:24)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1504642150", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1504642150'><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.List.size()&quot; because &quot;allMyRecords&quot; is null
+	at com.nwrc.HelperTest.HelperTests.setupPositiveTest(HelperTests.java:24)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:644)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>com.nwrc.testdataaccess.ConstantsTest@48f2bd5b</td></tr>
+<tr>
+<td title='com.nwrc.TradeTest.TradeTests.getCustomerAddress9p1()'><b>getCustomerAddress9p1</b><br>Test class: com.nwrc.TradeTest.TradeTests</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.List.size()&quot; because &quot;allMyRecords&quot; is null
+	at com.nwrc.HelperTest.HelperTests.setupPositiveTest(HelperTests.java:24)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1431530910", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1431530910'><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.List.size()&quot; because &quot;allMyRecords&quot; is null
+	at com.nwrc.HelperTest.HelperTests.setupPositiveTest(HelperTests.java:24)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:644)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>com.nwrc.TradeTest.TradeTests@7b2bbc3</td></tr>
+<tr>
+<td title='com.nwrc.TradeTest.TradeTests.getCustomerType8p1()'><b>getCustomerType8p1</b><br>Test class: com.nwrc.TradeTest.TradeTests</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.List.size()&quot; because &quot;allMyRecords&quot; is null
+	at com.nwrc.HelperTest.HelperTests.setupPositiveTest(HelperTests.java:24)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace752001567", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace752001567'><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.List.size()&quot; because &quot;allMyRecords&quot; is null
+	at com.nwrc.HelperTest.HelperTests.setupPositiveTest(HelperTests.java:24)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:644)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>com.nwrc.TradeTest.TradeTests@7b2bbc3</td></tr>
+<tr>
+<td title='com.nwrc.TradeTest.TradeTests.getSurfaceArea11p1()'><b>getSurfaceArea11p1</b><br>Test class: com.nwrc.TradeTest.TradeTests</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.List.size()&quot; because &quot;allMyRecords&quot; is null
+	at com.nwrc.HelperTest.HelperTests.setupPositiveTest(HelperTests.java:24)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1950701640", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1950701640'><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.List.size()&quot; because &quot;allMyRecords&quot; is null
+	at com.nwrc.HelperTest.HelperTests.setupPositiveTest(HelperTests.java:24)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:644)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>com.nwrc.TradeTest.TradeTests@7b2bbc3</td></tr>
+<tr>
+<td title='com.nwrc.GeneralTest.GeneralTests.getCustomerType1p2()'><b>getCustomerType1p2</b><br>Test class: com.nwrc.GeneralTest.GeneralTests</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.List.size()&quot; because &quot;allMyRecords&quot; is null
+	at com.nwrc.HelperTest.HelperTests.setupPositiveTest(HelperTests.java:24)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace843512726", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace843512726'><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.List.size()&quot; because &quot;allMyRecords&quot; is null
+	at com.nwrc.HelperTest.HelperTests.setupPositiveTest(HelperTests.java:24)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:644)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>com.nwrc.GeneralTest.GeneralTests@4c583ecf</td></tr>
+<tr>
+<td title='com.nwrc.CustomerTest.CustomerTests.getCoverage27p1()'><b>getCoverage27p1</b><br>Test class: com.nwrc.CustomerTest.CustomerTests</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.List.size()&quot; because &quot;allMyRecords&quot; is null
+	at com.nwrc.HelperTest.HelperTests.setupPositiveTest(HelperTests.java:24)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace8805846", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace8805846'><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.List.size()&quot; because &quot;allMyRecords&quot; is null
+	at com.nwrc.HelperTest.HelperTests.setupPositiveTest(HelperTests.java:24)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:644)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>com.nwrc.CustomerTest.CustomerTests@459e9125</td></tr>
+<tr>
+<td title='com.nwrc.CustomerTest.CustomerTests.getCoverage25p1()'><b>getCoverage25p1</b><br>Test class: com.nwrc.CustomerTest.CustomerTests</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.List.size()&quot; because &quot;allMyRecords&quot; is null
+	at com.nwrc.HelperTest.HelperTests.setupPositiveTest(HelperTests.java:24)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1785397234", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1785397234'><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.List.size()&quot; because &quot;allMyRecords&quot; is null
+	at com.nwrc.HelperTest.HelperTests.setupPositiveTest(HelperTests.java:24)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:644)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>com.nwrc.CustomerTest.CustomerTests@459e9125</td></tr>
+<tr>
+<td title='com.nwrc.TradeTest.TradeTests.getCustomerAddress9p2()'><b>getCustomerAddress9p2</b><br>Test class: com.nwrc.TradeTest.TradeTests</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.List.size()&quot; because &quot;allMyRecords&quot; is null
+	at com.nwrc.HelperTest.HelperTests.setupPositiveTest(HelperTests.java:24)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1954471782", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1954471782'><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.List.size()&quot; because &quot;allMyRecords&quot; is null
+	at com.nwrc.HelperTest.HelperTests.setupPositiveTest(HelperTests.java:24)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:644)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>com.nwrc.TradeTest.TradeTests@7b2bbc3</td></tr>
+<tr>
+<td title='com.nwrc.GeneralTest.GeneralTests.getRoomShape4p2()'><b>getRoomShape4p2</b><br>Test class: com.nwrc.GeneralTest.GeneralTests</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.List.size()&quot; because &quot;allMyRecords&quot; is null
+	at com.nwrc.HelperTest.HelperTests.setupPositiveTest(HelperTests.java:24)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1987169128", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1987169128'><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.List.size()&quot; because &quot;allMyRecords&quot; is null
+	at com.nwrc.HelperTest.HelperTests.setupPositiveTest(HelperTests.java:24)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:644)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>com.nwrc.GeneralTest.GeneralTests@4c583ecf</td></tr>
+<tr>
+<td title='com.nwrc.TradeTest.TradeTests.getCustomerType8p2()'><b>getCustomerType8p2</b><br>Test class: com.nwrc.TradeTest.TradeTests</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.List.size()&quot; because &quot;allMyRecords&quot; is null
+	at com.nwrc.HelperTest.HelperTests.setupPositiveTest(HelperTests.java:24)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace777379084", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace777379084'><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.List.size()&quot; because &quot;allMyRecords&quot; is null
+	at com.nwrc.HelperTest.HelperTests.setupPositiveTest(HelperTests.java:24)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:644)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>com.nwrc.TradeTest.TradeTests@7b2bbc3</td></tr>
+<tr>
+<td title='com.nwrc.GeneralTest.GeneralTests.getCustomerAddress2p2()'><b>getCustomerAddress2p2</b><br>Test class: com.nwrc.GeneralTest.GeneralTests</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.List.size()&quot; because &quot;allMyRecords&quot; is null
+	at com.nwrc.HelperTest.HelperTests.setupPositiveTest(HelperTests.java:24)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace530042637", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace530042637'><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.List.size()&quot; because &quot;allMyRecords&quot; is null
+	at com.nwrc.HelperTest.HelperTests.setupPositiveTest(HelperTests.java:24)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:644)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>com.nwrc.GeneralTest.GeneralTests@4c583ecf</td></tr>
+<tr>
+<td title='com.nwrc.HelperTest.HelperTests.getCustomerType1p1()'><b>getCustomerType1p1</b><br>Test class: com.nwrc.HelperTest.HelperTests</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.List.size()&quot; because &quot;allMyRecords&quot; is null
+	at com.nwrc.HelperTest.HelperTests.setupPositiveTest(HelperTests.java:24)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace278240974", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace278240974'><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.List.size()&quot; because &quot;allMyRecords&quot; is null
+	at com.nwrc.HelperTest.HelperTests.setupPositiveTest(HelperTests.java:24)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:644)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>com.nwrc.HelperTest.HelperTests@692f203f</td></tr>
+<tr>
+<td title='com.nwrc.TradeTest.TradeTests.getTradeName12p1()'><b>getTradeName12p1</b><br>Test class: com.nwrc.TradeTest.TradeTests</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.List.size()&quot; because &quot;allMyRecords&quot; is null
+	at com.nwrc.HelperTest.HelperTests.setupPositiveTest(HelperTests.java:24)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace931480286", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace931480286'><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.List.size()&quot; because &quot;allMyRecords&quot; is null
+	at com.nwrc.HelperTest.HelperTests.setupPositiveTest(HelperTests.java:24)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:644)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>com.nwrc.TradeTest.TradeTests@7b2bbc3</td></tr>
+<tr>
+<td title='com.nwrc.GeneralTest.GeneralTests.getWidth6p1()'><b>getWidth6p1</b><br>Test class: com.nwrc.GeneralTest.GeneralTests</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.List.size()&quot; because &quot;allMyRecords&quot; is null
+	at com.nwrc.HelperTest.HelperTests.setupPositiveTest(HelperTests.java:24)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1239183618", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1239183618'><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.List.size()&quot; because &quot;allMyRecords&quot; is null
+	at com.nwrc.HelperTest.HelperTests.setupPositiveTest(HelperTests.java:24)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:644)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>com.nwrc.GeneralTest.GeneralTests@4c583ecf</td></tr>
+<tr>
+<td title='com.nwrc.GeneralTest.GeneralTests.getHeight5p2()'><b>getHeight5p2</b><br>Test class: com.nwrc.GeneralTest.GeneralTests</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.List.size()&quot; because &quot;allMyRecords&quot; is null
+	at com.nwrc.HelperTest.HelperTests.setupPositiveTest(HelperTests.java:24)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1631086936", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1631086936'><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.List.size()&quot; because &quot;allMyRecords&quot; is null
+	at com.nwrc.HelperTest.HelperTests.setupPositiveTest(HelperTests.java:24)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:644)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>com.nwrc.GeneralTest.GeneralTests@4c583ecf</td></tr>
+<tr>
+<td title='com.nwrc.CustomerTest.CustomerTests.getCoverage24p1()'><b>getCoverage24p1</b><br>Test class: com.nwrc.CustomerTest.CustomerTests</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.List.size()&quot; because &quot;allMyRecords&quot; is null
+	at com.nwrc.HelperTest.HelperTests.setupPositiveTest(HelperTests.java:24)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace912672706", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace912672706'><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.List.size()&quot; because &quot;allMyRecords&quot; is null
+	at com.nwrc.HelperTest.HelperTests.setupPositiveTest(HelperTests.java:24)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:644)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>com.nwrc.CustomerTest.CustomerTests@459e9125</td></tr>
+<tr>
+<td title='com.nwrc.CustomerTest.CustomerTests.getCoverage23p1()'><b>getCoverage23p1</b><br>Test class: com.nwrc.CustomerTest.CustomerTests</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.List.size()&quot; because &quot;allMyRecords&quot; is null
+	at com.nwrc.HelperTest.HelperTests.setupPositiveTest(HelperTests.java:24)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1210830415", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1210830415'><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.List.size()&quot; because &quot;allMyRecords&quot; is null
+	at com.nwrc.HelperTest.HelperTests.setupPositiveTest(HelperTests.java:24)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:644)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>com.nwrc.CustomerTest.CustomerTests@459e9125</td></tr>
+<tr>
+<td title='com.nwrc.GeneralTest.GeneralTests.getRoomShape4p1()'><b>getRoomShape4p1</b><br>Test class: com.nwrc.GeneralTest.GeneralTests</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.List.size()&quot; because &quot;allMyRecords&quot; is null
+	at com.nwrc.HelperTest.HelperTests.setupPositiveTest(HelperTests.java:24)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1944978632", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1944978632'><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.List.size()&quot; because &quot;allMyRecords&quot; is null
+	at com.nwrc.HelperTest.HelperTests.setupPositiveTest(HelperTests.java:24)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:644)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>com.nwrc.GeneralTest.GeneralTests@4c583ecf</td></tr>
+<tr>
+<td title='com.nwrc.TradeTest.TradeTests.getTradeName12p2()'><b>getTradeName12p2</b><br>Test class: com.nwrc.TradeTest.TradeTests</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.List.size()&quot; because &quot;allMyRecords&quot; is null
+	at com.nwrc.HelperTest.HelperTests.setupPositiveTest(HelperTests.java:24)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace926434463", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace926434463'><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.List.size()&quot; because &quot;allMyRecords&quot; is null
+	at com.nwrc.HelperTest.HelperTests.setupPositiveTest(HelperTests.java:24)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:644)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>com.nwrc.TradeTest.TradeTests@7b2bbc3</td></tr>
+<tr>
+<td title='com.nwrc.GeneralTest.GeneralTests.getCustomerTelNo3p2()'><b>getCustomerTelNo3p2</b><br>Test class: com.nwrc.GeneralTest.GeneralTests</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.List.size()&quot; because &quot;allMyRecords&quot; is null
+	at com.nwrc.HelperTest.HelperTests.setupPositiveTest(HelperTests.java:24)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace124323713", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace124323713'><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.List.size()&quot; because &quot;allMyRecords&quot; is null
+	at com.nwrc.HelperTest.HelperTests.setupPositiveTest(HelperTests.java:24)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:644)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>com.nwrc.GeneralTest.GeneralTests@4c583ecf</td></tr>
+<tr>
+<td title='com.nwrc.TradeTest.TradeTests.getSurfaceArea11p2()'><b>getSurfaceArea11p2</b><br>Test class: com.nwrc.TradeTest.TradeTests</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.List.size()&quot; because &quot;allMyRecords&quot; is null
+	at com.nwrc.HelperTest.HelperTests.setupPositiveTest(HelperTests.java:24)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace243194708", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace243194708'><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.List.size()&quot; because &quot;allMyRecords&quot; is null
+	at com.nwrc.HelperTest.HelperTests.setupPositiveTest(HelperTests.java:24)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:644)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>com.nwrc.TradeTest.TradeTests@7b2bbc3</td></tr>
+<tr>
+<td title='com.nwrc.GeneralTest.GeneralTests.getCustomerType1p1()'><b>getCustomerType1p1</b><br>Test class: com.nwrc.GeneralTest.GeneralTests</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.List.size()&quot; because &quot;allMyRecords&quot; is null
+	at com.nwrc.HelperTest.HelperTests.setupPositiveTest(HelperTests.java:24)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2011997442", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2011997442'><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.List.size()&quot; because &quot;allMyRecords&quot; is null
+	at com.nwrc.HelperTest.HelperTests.setupPositiveTest(HelperTests.java:24)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:644)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>com.nwrc.GeneralTest.GeneralTests@4c583ecf</td></tr>
+<tr>
+<td title='com.nwrc.testdataaccess.ConstantsTest.testCoverage13p1()'><b>testCoverage13p1</b><br>Test class: com.nwrc.testdataaccess.ConstantsTest</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.List.size()&quot; because &quot;allMyRecords&quot; is null
+	at com.nwrc.HelperTest.HelperTests.setupPositiveTest(HelperTests.java:24)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace888655833", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace888655833'><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.List.size()&quot; because &quot;allMyRecords&quot; is null
+	at com.nwrc.HelperTest.HelperTests.setupPositiveTest(HelperTests.java:24)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:644)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>com.nwrc.testdataaccess.ConstantsTest@48f2bd5b</td></tr>
+<tr>
+<td title='com.nwrc.CustomerTest.CustomerTests.getCoverage26p1()'><b>getCoverage26p1</b><br>Test class: com.nwrc.CustomerTest.CustomerTests</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.List.size()&quot; because &quot;allMyRecords&quot; is null
+	at com.nwrc.HelperTest.HelperTests.setupPositiveTest(HelperTests.java:24)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace373928166", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace373928166'><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.List.size()&quot; because &quot;allMyRecords&quot; is null
+	at com.nwrc.HelperTest.HelperTests.setupPositiveTest(HelperTests.java:24)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:644)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>com.nwrc.CustomerTest.CustomerTests@459e9125</td></tr>
+<tr>
+<td title='com.nwrc.GeneralTest.GeneralTests.getHeight5p1()'><b>getHeight5p1</b><br>Test class: com.nwrc.GeneralTest.GeneralTests</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.List.size()&quot; because &quot;allMyRecords&quot; is null
+	at com.nwrc.HelperTest.HelperTests.setupPositiveTest(HelperTests.java:24)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace773989906", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace773989906'><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.List.size()&quot; because &quot;allMyRecords&quot; is null
+	at com.nwrc.HelperTest.HelperTests.setupPositiveTest(HelperTests.java:24)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:644)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>com.nwrc.GeneralTest.GeneralTests@4c583ecf</td></tr>
+<tr>
+<td title='com.nwrc.CustomerTest.CustomerTests.getCoverage22p1()'><b>getCoverage22p1</b><br>Test class: com.nwrc.CustomerTest.CustomerTests</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.List.size()&quot; because &quot;allMyRecords&quot; is null
+	at com.nwrc.HelperTest.HelperTests.setupPositiveTest(HelperTests.java:24)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1437941060", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1437941060'><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.List.size()&quot; because &quot;allMyRecords&quot; is null
+	at com.nwrc.HelperTest.HelperTests.setupPositiveTest(HelperTests.java:24)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:644)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>com.nwrc.CustomerTest.CustomerTests@459e9125</td></tr>
+<tr>
+<td title='com.nwrc.CustomerTest.CustomerTests.getCoverage21p1()'><b>getCoverage21p1</b><br>Test class: com.nwrc.CustomerTest.CustomerTests</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.List.size()&quot; because &quot;allMyRecords&quot; is null
+	at com.nwrc.HelperTest.HelperTests.setupPositiveTest(HelperTests.java:24)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1604353554", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1604353554'><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.List.size()&quot; because &quot;allMyRecords&quot; is null
+	at com.nwrc.HelperTest.HelperTests.setupPositiveTest(HelperTests.java:24)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:644)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>com.nwrc.CustomerTest.CustomerTests@459e9125</td></tr>
+<tr>
+<td title='com.nwrc.GeneralTest.GeneralTests.getCustomerName7p1()'><b>getCustomerName7p1</b><br>Test class: com.nwrc.GeneralTest.GeneralTests</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.List.size()&quot; because &quot;allMyRecords&quot; is null
+	at com.nwrc.HelperTest.HelperTests.setupPositiveTest(HelperTests.java:24)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace336371513", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace336371513'><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.List.size()&quot; because &quot;allMyRecords&quot; is null
+	at com.nwrc.HelperTest.HelperTests.setupPositiveTest(HelperTests.java:24)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:644)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>com.nwrc.GeneralTest.GeneralTests@4c583ecf</td></tr>
+<tr>
+<td title='com.nwrc.TradeTest.TradeTests.getCustomerTelNo10p2()'><b>getCustomerTelNo10p2</b><br>Test class: com.nwrc.TradeTest.TradeTests</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.List.size()&quot; because &quot;allMyRecords&quot; is null
+	at com.nwrc.HelperTest.HelperTests.setupPositiveTest(HelperTests.java:24)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1646464088", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1646464088'><pre>java.lang.NullPointerException: Cannot invoke &quot;java.util.List.size()&quot; because &quot;allMyRecords&quot; is null
+	at com.nwrc.HelperTest.HelperTests.setupPositiveTest(HelperTests.java:24)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:644)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>com.nwrc.TradeTest.TradeTests@7b2bbc3</td></tr>
+</table><p>
+</body>
+</html>
